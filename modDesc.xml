@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="47">
+    <author>LsModcompany / kevink98, AndreasK85</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>GlobalCompany - Productions</en>
+        <de>GlobalCompany - Productions</de>
+    </title>
+    <description>
+        <en><![CDATA[Productions
+
+
+Information: Mod only playable in combination with GlobalCompany!]]></en>
+        <de><![CDATA[Productions
+
+
+
+Information: Mod nur in Verbindung mit GlobalCompany spielbar!]]></de>
+    </description>
+    <iconFilename>icon_placeableDisplays.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="ProductionHall.xml" />
+    </storeItems>
+	
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+    </extraSourceFiles>
+    
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+	<globalCompany minimumVersion="1.5.0.0" />
+</modDesc>

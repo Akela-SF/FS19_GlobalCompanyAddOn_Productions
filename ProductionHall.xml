@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>$l10n_GlobalCompanyPlaceable_GlobalMarket_shopItem</name>
+        <functions>
+            <function>$l10n_GlobalCompanyPlaceable_GlobalMarket_function</function>
+        </functions>
+        <specs>
+        
+        </specs>
+        <image>store_globalMarket.dds</image>
+        <price>35000</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>0</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>GCPLACEABLE</brand>
+        <species>placeable</species>
+        <category>globalCompanyPlaceable</category>
+    </storeData>
+
+    <placeableType>placeable</placeableType>
+    <filename>Lager_Kevin.i3d</filename>
+    <placement testSizeX="25" testSizeZ="25" sizeX="50" sizeZ="50" useRandomYRotation="false" useManualYRotation="true" />
+
+    
+    	
+    <triggerMarkers>
+        <!--triggerMarker node="5" /-->
+    </triggerMarkers>
+	
+    <clearAreas>
+        <!--clearArea startNode="3|0" widthNode="3|0|0" heightNode="3|0|1"/-->
+    </clearAreas>
+	
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <!--levelAreas>
+            <levelArea startNode="3|0" widthNode="3|0|0" heightNode="3|0|1" groundType="asphalt"/>
+            <levelArea startNode="3|1" widthNode="3|1|0" heightNode="3|1|1" groundType="grass"/>
+            <levelArea startNode="3|2" widthNode="3|2|0" heightNode="3|2|1" groundType="dirt"/>
+        </levelAreas-->
+    </leveling>
+
+    <dayNightObjects>
+        
+        
+    </dayNightObjects>
+
+    <tipOcclusionUpdateArea sizeX="50" sizeZ="50" />
+</placeable>
