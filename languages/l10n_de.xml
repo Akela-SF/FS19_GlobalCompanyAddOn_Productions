@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="GlobalCompanyAddOn_Productions_category" v="Productions"/>
+
+		<e k="GlobalCompanyAddOn_Productions_shopItem_bucket" v="Eimer"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_bucket" v="In einem Eimer können Flüssigkeiten gelagert werden."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_plasticbox" v="Plastikbox"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_plasticbox" v="Mit einer Plastikbox können verschiedene Dinge transportiert werden."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_emptyPallet" v="Leere Palette"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_emptyPallet" v="In einer leeren Palette können verschiedene Dinge gelagert werden."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_emptyPallet2" v="Leere Palette"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_emptyPallet2" v="In einer leeren Palette können verschiedene Dinge gelagert werden. Diese Palette kann mit Schüttgut befüllt werden."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_transportPallet" v="Leere Palette"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_transportPallet" v="In einer leeren Palette können verschiedene Dinge gelagert werden."/>
+    	<e k="GlobalCompanyAddOn_Productions_shopItem_liquidTank" v="Leere Palette"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_liquidTank" v="In dieser leeren Palette können Flüssigkeiten transportiert werden."/>
+
+		<e k="GlobalCompanyAddOn_Productions_shopItem_hall" v="Produktionshalle mit Lager"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_hall" v="Im vorderen Bereich hat es Platz für Produktionsmaschinen. Hinten gibt es ein kleines Lager."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_storage" v="Großes Lager"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_storage" v="In diesem Lager stehen Hochregale, in diesen Waren gelagert werden können."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_storage2" v="Mittleres Lager"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_storage2" v="In diesem Lager stehen Hochregale, in diesen Waren gelagert werden können. In der Mitte gibt es freien Platz."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_storage3" v="Produktions- und Lagerhalle"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_storage3" v="Diese große Halle kann nach belieben eingesetzt werden."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_sellstation" v="Hofladen"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_sellstation" v="Im Hofladen können alle Productions-Produkte verkauft werden."/>
+
+		<e k="GlobalCompanyAddOn_Productions_fillType_honeyBoxFull" v="Honigbox voll"/>
+		
+		<e k="GlobalCompanyAddOn_Productions_fillType_apple" v="Äpfel"/>
+		<e k="GlobalCompanyAddOn_Productions_fillType_cherry" v="Kirschen"/>
+		<e k="GlobalCompanyAddOn_Productions_fillType_pear" v="Birnen"/>
+		<e k="GlobalCompanyAddOn_Productions_fillType_plum" v="Pflaumen"/>
+
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line1" v="Verkauf Honig"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line2" v="Verkauf Äpfel"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line3" v="Verkauf Kirschen"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line4" v="Verkauf Birnen"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line5" v="Verkauf Pflaumen"/>
+
+		<e k="GlobalCompanyAddOn_Productions_unit_glass" v="Gläser"/>
+    </elements>
+</l10n>

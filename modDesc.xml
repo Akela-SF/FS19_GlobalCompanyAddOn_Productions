@@ -1,35 +1,185 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="47">
-    <author>LsModcompany / kevink98, AndreasK85</author>
+<modDesc descVersion="51">
+    <author>LsModcompany / kevink98, AndreasK85, Eribus - HoT</author>
     <version>1.0.0.0</version>
     <title>
         <en>GlobalCompany - Productions</en>
-        <de>GlobalCompany - Productions</de>
+        <de>GlobalCompany - Produktionen</de>
     </title>
     <description>
-        <en><![CDATA[Productions
+        <en><![CDATA[Main mode for productions
 
+This modpack contains four buildings:
+
+Production hall with warehouse
+Description: In the front area productions can be installed, in the rear area there is a storage area.
+Price: 45.000 €
+Maintenance costs: 100 € / day
+
+Middle bearing
+Description: The warehouse has high shelves on the side walls. The middle is free.
+Price: 30.000 €
+Maintenance costs: 100 € / day
+
+Large warehouse
+Description: High shelves are mounted on the walls and in the middle of the hall.
+Price: 35.000 €
+Maintenance costs: 100 € / day
+
+Production and storage hall
+Description: Empty hall, which can be used as desired.
+Price: 28.000 €
+Maintenance costs: 100 € / day
+
+Farm shop
+Description: All products can be sold in the farm shop.
+Price: 15.000 €
+Maintenance costs: 250 € / day
+
+
+The following items are also available:
+Bucket
+Description: A bucket can be used to store liquids. Capacity is 10 litres
+Price: 30 €
+
+Plastic box
+Description: This box can be used to transport and store various things.
+Price: 30 €
+
+Empty pallet (grid box)
+Description: Grid box for transport of objects.
+Price: 100 €
+
+Empty pallet (wooden box)
+Description: Wooden box for transport of objects.
+Price: 90 €.
+
+Empty pallet
+Description: Empty pallet on which other objects can be transported.
+Price: 50 €
+
+Empty pallet (liquid tank)
+Description: Storage of liquids
+Price: 130 €
 
 Information: Mod only playable in combination with GlobalCompany!]]></en>
-        <de><![CDATA[Productions
+        <de><![CDATA[Hauptmod für Produktionen
 
+Dieses Modpack enthält vier Gebäude:
+
+Produktionshalle mit Lager
+Beschreibung: Im voderen Bereich können Produktionen eingebaut werden, im hinteren Bereich gibt es eine Lagerfläche.
+Preis: 45.000 €
+Unterhaltskosten: 100 € / Tag
+
+Mittleres Lager
+Beschreibung: In der Lagerhalle hat es an den Seitenwänden Hochregale. Die Mitte ist frei.
+Preis: 30.000 €
+Unterhaltskosten: 100 € / Tag
+
+Großes Lager
+Beschreibung: Hochregale sind an den Wänden und in der Mitte der Halle angebracht.
+Preis: 35.000 €
+Unterhaltskosten: 100 € / Tag
+
+Produktions- und Lagerhalle
+Beschreibung: Leere Halle, die nach belieben eingesetzt werden kann.
+Preis: 28.000 €
+Unterhaltskosten: 100 € / Tag
+
+Hofladen
+Beschreibung: Im Hofladen können alle Produkte verkauft werden.
+Preis: 15.000 €
+Unterhaltskosten: 250 € / Tag
+
+
+Darüber hinaus gibt es folgende Gegenstände:
+Eimer
+Beschreibung: In einem Eimer können Flüssigkeiten gelagert werden. Fassungsvolumen beträgt 10 Liter
+Preis: 30 €
+
+Plastikbox
+Beschreibung: In dieser Box können verschiedene Dinge transportiert und gelagert werden.
+Preis: 30 €
+
+Leere Palette (Gitterbox)
+Beschreibung: Gitterbox für Transport von Objekten.
+Preis: 100 €
+
+Leere Palette (Holzbox)
+Beschreibung: Holzbox für Transport von Objekten.
+Preis: 90 €
+
+Leere Palette
+Beschreibung: Leere Palette, auf der andere Objekete transportiert werden können.
+Preis: 50 €
+
+Leere Palette (Flüssigkeitstank)
+Beschreibung: Lagerung von Flüssigkeiten
+Preis: 130 €
 
 
 Information: Mod nur in Verbindung mit GlobalCompany spielbar!]]></de>
     </description>
-    <iconFilename>icon_placeableDisplays.dds</iconFilename>
+    <iconFilename>icon_productions.dds</iconFilename>
     <multiplayer supported="true" />
 
     <storeItems>
         <storeItem xmlFilename="ProductionHall.xml" />
+        <storeItem xmlFilename="ProductionStorage2.xml" />
+        <storeItem xmlFilename="ProductionStorage.xml" />
+        <storeItem xmlFilename="ProductionStorage3.xml" />
+        <storeItem xmlFilename="Sellstation.xml" />
+
+        <storeItem xmlFilename="items/Bucket.xml" />
+        <storeItem xmlFilename="items/Plasticbox.xml" />
+        <storeItem xmlFilename="items/emptyPallet.xml" />
+        <storeItem xmlFilename="items/emptyPallet2.xml" />
+        <storeItem xmlFilename="items/transportPallet.xml" />
+        <storeItem xmlFilename="items/liquidTank.xml" />
     </storeItems>
+    
+	<specializations>
+        <specialization name="gcExtendedFillType" className="GC_SpecExtendedFillType" filename="../FS19_GlobalCompany/vehicles/specializations/ExtendedFillType.lua"/>
+ 	</specializations>  
+
+	<vehicleTypes>
+        <type name="gcProductionItem" parent="base" filename="$dataS/scripts/vehicles/Vehicle.lua">	
+			<specialization name="tensionBelts" />
+            <specialization name="tensionBeltObject" />	
+			<specialization name="gcExtendedFillType"/>			
+        </type>
+        <type name="gcProductionItemNone" parent="base" filename="$dataS/scripts/vehicles/Vehicle.lua">	
+			<specialization name="tensionBelts" />
+            <specialization name="tensionBeltObject" />			
+        </type>
+	</vehicleTypes>
 	
 	<extraSourceFiles>
-		<sourceFile filename="GC_Checker.lua" />
+		<sourceFile filename="scripts/GC_Checker.lua" />
     </extraSourceFiles>
-    
+        
     <brands>
-        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+        <brand name="GCRODUCTIONS" title="GlobalCompany Productions" image="brand_productions.dds"/>
     </brands>
-	<globalCompany minimumVersion="1.5.0.0" />
+	<globalCompany minimumVersion="1.7.0.0" />
+
+    <l10n>
+		<text name="action_openWindow">
+            <en>Open window</en>
+            <de>Fenster öffnen</de>
+        </text>
+		<text name="action_closeWindow">
+            <en>Close window</en>
+            <de>Fenster schließen</de>
+        </text>
+		<text name="action_lightOn">
+            <en>Light on</en>
+            <de>Licht an</de>
+        </text>
+		<text name="action_lightOff">
+            <en>Light off</en>
+            <de>Licht aus</de>
+        </text>
+    </l10n>
 </modDesc>

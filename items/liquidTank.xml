@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="gcProductionItem">
+    <storeData>
+        <name>$l10n_GlobalCompanyAddOn_Productions_shopItem_liquidTank</name>
+        <functions>
+            <function>$l10n_GlobalCompanyAddOn_Productions_shopItem_function_liquidTank</function>
+        </functions>
+        <specs>
+            <capacity>2000</capacity>
+        </specs>
+        <image>items/store_liquidTank.dds</image>
+        <price>130</price>
+        <category>gcProduction</category>
+        <brand>GCRODUCTIONS</brand>
+        <showInStore>true</showInStore>
+        <canBeSold>true</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+    </storeData>
+
+    <base>
+        <filename>items/liquidTank.i3d</filename>
+        <size width="2" length="2" lengthOffset="0" />
+        <input allowed="false"/>
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100" />
+        </components>
+    </base>
+
+    <gcExtendedFilltype filltypeCategorie="LIQUID" startFillLevel="0" capacity="2000" />
+
+    <dischargeable requiresTipOcclusionArea="false" />
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="fertilizerTank_vis"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <i3dMappings>
+        <i3dMapping id="fillTrigger" node="0>0|1" />
+        <i3dMapping id="fertilizerTank_vis" node="0>2|0" />
+        <i3dMapping id="materialHerbicide" node="0>2|1" />
+    </i3dMappings>
+</vehicle>

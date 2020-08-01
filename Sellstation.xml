@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>$l10n_GlobalCompanyAddOn_Productions_shopItem_sellstation</name>
+        <functions>
+            <function>$l10n_GlobalCompanyAddOn_Productions_shopItem_function_sellstation</function>
+        </functions>
+        <specs>
+        
+        </specs>
+        <image>store_sellStation.dds</image>
+        <price>15000</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>250</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>GCRODUCTIONS</brand>
+        <species>placeable</species>
+        <category>globalCompanyPlaceable</category>
+    </storeData>
+
+    <placeableType>GC_ProductionFactoryPlaceable</placeableType>
+    <filename>Sellstation.i3d</filename>
+    <placement testSizeX="5" testSizeZ="10" sizeX="9" sizeZ="16" useRandomYRotation="false" useManualYRotation="true" />
+  
+    <clearAreas>
+        <clearArea startNode="3|0" widthNode="3|1" heightNode="3|2"/>
+    </clearAreas>
+	
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="3|0" widthNode="3|1" heightNode="3|2" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <tipOcclusionUpdateArea sizeX="9" sizeZ="16" />
+
+    <seasons>
+        <maskAreas>
+            <maskArea startNode="3|0" widthNode="3|1" heightNode="14|2"/>
+        </maskAreas>
+    </seasons>
+
+    <productionFactories>
+		<productionFactory indexName="PRODUCTION_SELLINGSTATION" saveId="globalCompany_production_sellingstation">
+			<guiInformation title="GlobalCompanyAddOn_Productions_shopItem_sellstation" imageFilename="store_sellStation.dds" description="GlobalCompanyAddOn_Productions_shopItem_function_sellstation" cameraFeed="gui_camera"/>
+			
+			<operation updateDelayMinutes="10" showInGlobalGUI="true" />
+			
+			<playerTrigger playerTriggerNode="PlayerTrigger"/>
+					
+			<registerInputProducts>				
+				<inputProduct name="SELL_HONEYBOXFULL" capacity="80" title="$l10n_GlobalCompanyAddOn_Productions_fillType_honeyBoxFull" unitLang="GlobalCompanyAddOn_Productions_unit_glass" > 
+					<fillTypes>
+						<fillType name="HONEYBOXFULL" isExtend="true" />
+					</fillTypes>																
+					<inputMethods>
+						<extendedFillTypesTrigger node="InputTrigger1"/>
+					</inputMethods>	
+                    <visibilityNodes>
+                        <nodeGroup node="visHoneyBoxFull" />
+                    </visibilityNodes>
+				</inputProduct>	
+				<inputProduct name="SELL_APPLE" capacity="1000" title="$l10n_GlobalCompanyAddOn_Productions_fillType_apple" > 
+					<fillTypes>
+						<fillType name="APPLE" isExtend="true" />
+					</fillTypes>																
+					<inputMethods>
+						<extendedFillTypesTrigger node="InputTrigger2"/>
+					</inputMethods>						
+					<movers>
+						<mover node="planeApple">
+							<translation minimum="0 0.298 0" maximum="0 0.917 0" />
+						</mover>
+					</movers>	
+				</inputProduct>
+				<inputProduct name="SELL_CHERRY" capacity="1000" title="$l10n_GlobalCompanyAddOn_Productions_fillType_cherry" > 
+					<fillTypes>
+						<fillType name="CHERRY" isExtend="true" />
+					</fillTypes>																
+					<inputMethods>
+						<extendedFillTypesTrigger node="InputTrigger3"/>
+					</inputMethods>						
+					<movers>
+						<mover node="planeCherry">
+							<translation minimum="0 0.298 0" maximum="0 0.917 0" />
+						</mover>
+					</movers>	
+				</inputProduct>
+				<inputProduct name="SELL_PEAR" capacity="1000" title="$l10n_GlobalCompanyAddOn_Productions_fillType_pear" > 
+					<fillTypes>
+						<fillType name="PEAR" isExtend="true" />
+					</fillTypes>																
+					<inputMethods>
+						<extendedFillTypesTrigger node="InputTrigger4"/>
+					</inputMethods>						
+					<movers>
+						<mover node="planePear">
+							<translation minimum="0 0.298 0" maximum="0 0.917 0" />
+						</mover>
+					</movers>	
+				</inputProduct>
+				<inputProduct name="SELL_PLUM" capacity="1000" title="$l10n_GlobalCompanyAddOn_Productions_fillType_plum" > 
+					<fillTypes>
+						<fillType name="PLUM" isExtend="true" />
+					</fillTypes>																
+					<inputMethods>
+						<extendedFillTypesTrigger node="InputTrigger5"/>
+					</inputMethods>						
+					<movers>
+						<mover node="planePlum">
+							<translation minimum="0 0.298 0" maximum="0 0.917 0" />
+						</mover>
+					</movers>	
+				</inputProduct>
+			</registerInputProducts>
+			
+			<registerOutputProducts>
+				<outputProduct name="OP_AIR" fillType="AIR" capacity="2000"  >
+					<outputMethods>
+                        <objectSpawner xmlFilename="$data/objects/pallets/eggBox/eggBox.xml" capacity="400" >
+                        </objectSpawner>
+					</outputMethods>
+				</outputProduct>
+			</registerOutputProducts>
+
+			<productLines>
+				<productLine autoLineStart="true" outputPerHour="1" title="GlobalCompanyAddOn_Productions_sellstation_line1" showInGUI="true">
+					<inputs>
+						<inputProduct name="SELL_HONEYBOXFULL" percent="100">
+							<income pricePerLiter="500" />
+						</inputProduct>
+					</inputs>					
+				</productLine>
+				<productLine autoLineStart="true" outputPerHour="100" title="GlobalCompanyAddOn_Productions_sellstation_line2" showInGUI="true">
+					<inputs>
+						<inputProduct name="SELL_APPLE" percent="100">
+							<income pricePerLiter="1.9" />
+						</inputProduct>
+					</inputs>					
+				</productLine>
+				<productLine autoLineStart="true" outputPerHour="100" title="GlobalCompanyAddOn_Productions_sellstation_line3" showInGUI="true">
+					<inputs>
+						<inputProduct name="SELL_CHERRY" percent="100">
+							<income pricePerLiter="2.2" />
+						</inputProduct>
+					</inputs>					
+				</productLine>
+				<productLine autoLineStart="true" outputPerHour="100" title="GlobalCompanyAddOn_Productions_sellstation_line4" showInGUI="true">
+					<inputs>
+						<inputProduct name="SELL_PEAR" percent="100">
+							<income pricePerLiter="2.1" />
+						</inputProduct>
+					</inputs>					
+				</productLine>
+				<productLine autoLineStart="true" outputPerHour="100" title="GlobalCompanyAddOn_Productions_sellstation_line5" showInGUI="true">
+					<inputs>
+						<inputProduct name="SELL_PLUM" percent="100">
+							<income pricePerLiter="1.8" />
+						</inputProduct>
+					</inputs>					
+				</productLine>
+			</productLines>
+			
+			<i3dMappings>              
+				<i3dMapping id="gui_camera" node="4" />
+				<i3dMapping id="PlayerTrigger" node="6" />
+				<i3dMapping id="visHoneyBoxFull" node="7|0" />
+				<i3dMapping id="planeApple" node="8|0|0" />
+				<i3dMapping id="planeCherry" node="9|0|0" />
+				<i3dMapping id="planePear" node="10|0|0" />
+				<i3dMapping id="planePlum" node="11|0|0" />
+				<i3dMapping id="InputTrigger1" node="14" />
+				<i3dMapping id="InputTrigger2" node="15" />
+				<i3dMapping id="InputTrigger3" node="16" />
+				<i3dMapping id="InputTrigger4" node="17" />
+				<i3dMapping id="InputTrigger5" node="18" />
+			</i3dMappings>				
+		</productionFactory>
+	</productionFactories>
+
+    <animatedObjects>        
+        <animatedObject index="Door1">
+            <animation initialTime="0" duration="2">
+                <part node="1|0|0|0">				
+                    <Keyframe time="0" rotation="-90 0 0"/>
+                    <Keyframe time="0.3" rotation="-117 0 0"/>
+                    <Keyframe time="0.35" rotation="-117 0 0"/>
+                    <Keyframe time="0.6" rotation="-90 0 0"/>
+                    <Keyframe time="1" rotation="-90 0 0"/>
+                </part>
+                <part node="1|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.3" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 100 0"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="1|0|1" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving file="sounds/Door2.ogg" loops="1" linkNode="1|0|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Door2">
+            <animation initialTime="0" duration="2">
+                <part node="1|1|0|0">				
+                    <Keyframe time="0" rotation="90 0 180"/>
+                    <Keyframe time="0.3" rotation="63 0 180"/>
+                    <Keyframe time="0.35" rotation="63 0 180"/>
+                    <Keyframe time="0.6" rotation="90 0 180"/>
+                    <Keyframe time="1" rotation="90 0 180"/>
+                </part>
+                <part node="1|1|0">				
+                    <Keyframe time="0.3" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 170 0"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="1|1|1" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving file="sounds/Door2.ogg" loops="1" linkNode="1|1|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Light1">
+            <animation initialTime="0" duration="1">
+                <part node="2|0|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" rotation="-6.484 0 0"/>
+                    <Keyframe time="1" rotation="0 0 0"/>
+                </part>
+                <part node="2|0|2|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="2|0|3|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="2|0|4|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="2|0|1" posText="action_lightOn" negText="action_lightOff" />
+        </animatedObject>
+    </animatedObjects>
+</placeable>

@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="GlobalCompanyAddOn_Productions_category" v="Productions"/>
+
+		<e k="GlobalCompanyAddOn_Productions_shopItem_bucket" v="Bucket"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_bucket" v="Liquids can be stored in a bucket."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_plasticbox" v="Plastic box"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_plasticbox" v="With a plastic box different things can be transported."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_emptyPallet" v="Empty pallet"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_emptyPallet" v="Different things can be stored in an empty pallet."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_emptyPallet2" v="Empty pallet"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_emptyPallet2" v="Different things can be stored in an empty pallet. This pallet can be filled with bulk material."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_transportPallet" v="Empty pallet"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_transportPallet" v="Different things can be stored in an empty pallet."/>
+    	<e k="GlobalCompanyAddOn_Productions_shopItem_liquidTank" v="Empty pallet"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_liquidTank" v="Liquids can be transported in this empty pallet."/>
+
+		<e k="GlobalCompanyAddOn_Productions_shopItem_hall" v="Production hall with warehouse"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_hall" v="In the front area there is space for production machines. In the back there is a small warehouse."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_storage" v="Large warehouse"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_storage" v="In this warehouse there are high shelves in which goods can be stored."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_storage2" v="Middle warehouse"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_storage2" v="In this warehouse there are high shelves in which goods can be stored. There is free space in the middle."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_storage3" v="Production hall and warehouse"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_storage3" v="This large hall can be used as desired."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_sellstation" v="Farm shop"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_sellstation" v="All production products can be sold in the farm shop."/>
+
+		<e k="GlobalCompanyAddOn_Productions_fillType_honeyBoxFull" v="Honey box full"/>
+		
+		<e k="GlobalCompanyAddOn_Productions_fillType_apple" v="Apples"/>
+		<e k="GlobalCompanyAddOn_Productions_fillType_cherry" v="Cherries"/>
+		<e k="GlobalCompanyAddOn_Productions_fillType_pear" v="Pears"/>
+		<e k="GlobalCompanyAddOn_Productions_fillType_plum" v="Plums"/>
+
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line1" v="Sale of honey"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line2" v="Sale of apples"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line3" v="Sale of cherries"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line4" v="Sale of pears"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line5" v="Sale of plums"/>
+
+		<e k="GlobalCompanyAddOn_Productions_unit_glass" v="Glasses"/>
+    </elements>
+</l10n>

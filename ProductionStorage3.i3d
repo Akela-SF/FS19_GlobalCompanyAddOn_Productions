@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="33" filename="$data/maps/textures/european/props/lightPoleSetGlass_diffuse.png"/>
+    <File fileId="35" filename="$data/maps/textures/european/props/lightPoleSetGlass_specular.png"/>
+    <File fileId="30" filename="$data/maps/textures/european/props/lightPoleSet_diffuse.png"/>
+    <File fileId="37" filename="$data/maps/textures/european/props/lightPoleSet_emissive.png"/>
+    <File fileId="31" filename="$data/maps/textures/european/props/lightPoleSet_normal.png"/>
+    <File fileId="32" filename="$data/maps/textures/european/props/lightPoleSet_specular.png"/>
+    <File fileId="38" filename="$data/maps/textures/european/props/propsDecals_diffuse.png"/>
+    <File fileId="40" filename="$data/maps/textures/european/props/propsDecals_specular.png"/>
+    <File fileId="39" filename="$data/maps/textures/shared/default_normal.png"/>
+    <File fileId="8" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="36" filename="$data/shaders/dashboardLightsShader.xml"/>
+    <File fileId="41" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="34" filename="$data/shared/default_normal.dds"/>
+    <File fileId="27" filename="textures/Fiberglass_diff.dds"/>
+    <File fileId="28" filename="textures/Fiberglass_nor.dds"/>
+    <File fileId="47" filename="textures/Lichtabdeckung_AN.dds"/>
+    <File fileId="45" filename="textures/Lichtabdeckung_AUS.dds"/>
+    <File fileId="42" filename="textures/LightSet_Diffuse.dds"/>
+    <File fileId="44" filename="textures/Schalterlicht_AN.dds"/>
+    <File fileId="43" filename="textures/Schalterlicht_AUS.dds"/>
+    <File fileId="22" filename="textures/SolarPanel_diff.dds"/>
+    <File fileId="23" filename="textures/SolarPanel_nor.dds"/>
+    <File fileId="7" filename="textures/Weiss_2_normal.dds"/>
+    <File fileId="2" filename="textures/aluminium_metal_nor.dds"/>
+    <File fileId="17" filename="textures/asphalt_nor.dds"/>
+    <File fileId="19" filename="textures/brushed_aluminium_nor.dds"/>
+    <File fileId="26" filename="textures/iron metal_nor.dds"/>
+    <File fileId="15" filename="textures/iron_corrugated_metal_nor.dds"/>
+    <File fileId="9" filename="textures/mask_1.dds"/>
+    <File fileId="21" filename="textures/mixed_gravel_nor.dds"/>
+    <File fileId="24" filename="$data/shared/window_diffuse.dds"/>
+    <File fileId="5" filename="$data/shared/window_specular.dds"/>
+    <File fileId="6" filename="textures\Weiss_2.dds"/>
+    <File fileId="1" filename="textures\aluminium_metal_diff.dds"/>
+    <File fileId="16" filename="textures\asphalt_diff.dds"/>
+    <File fileId="18" filename="textures\brushed_aluminium_diff.dds"/>
+    <File fileId="25" filename="textures\iron metal.dds"/>
+    <File fileId="14" filename="textures\iron_corrugated_metal_diff.dds"/>
+    <File fileId="20" filename="textures\mixed_gravel_diff.dds"/>
+    <File fileId="3" filename="$data/shared/window_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Fiberglas" materialId="9">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+    </Material>
+    <Material name="redlight_mat" materialId="4">
+      <Texture fileId="43"/>
+    </Material>
+    <Material name="plasticlite_mat" materialId="6">
+      <Texture fileId="45"/>
+    </Material>
+    <Material name="Window" materialId="7" specularColor="0.4 1 0.4">
+      <Texture fileId="3"/>
+      <Emissivemap fileId="5"/>
+    </Material>
+    <Material name="emissiveplastic_mat" materialId="8" diffuseColor="1 1 1 1">
+      <Emissivemap fileId="47"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="5" alphaBlending="true" customShaderId="41">
+      <Texture fileId="38"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="40"/>
+    </Material>
+    <Material name="Edelstahl" materialId="15" specularColor="0.4 1 0.4">
+      <Normalmap fileId="19"/>
+    </Material>
+    <Material name="gravel" materialId="23">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+    </Material>
+    <Material name="1" materialId="19" specularColor="0.4 1 0.4" customShaderId="8">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Custommap name="mMaskMap" fileId="9"/>
+    </Material>
+    <Material name="lambert1" materialId="20" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Boden" materialId="22" customShaderId="8">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Custommap name="mMaskMap" fileId="9"/>
+    </Material>
+    <Material name="LightSet_mat" materialId="13">
+      <Texture fileId="42"/>
+    </Material>
+    <Material name="Rahmen" materialId="12">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="Griff" materialId="21">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+    </Material>
+    <Material name="Edelstahl" materialId="18" specularColor="0.4 1 0.4">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+    </Material>
+    <Material name="Aussenwand" materialId="16" specularColor="0.4 1 0.4">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+    </Material>
+    <Material name="Solar" materialId="14" specularColor="0.4 1 0.4">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+    </Material>
+    <Material name="emissivered_mat" materialId="10">
+      <Texture fileId="44"/>
+    </Material>
+    <Material name="Window" materialId="24" specularColor="0.4 1 0.4">
+      <Texture fileId="24"/>
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="lightPoleSetGlass_mat" materialId="25" alphaBlending="true" customShaderId="36">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <Glossmap fileId="35"/>
+      <Custommap name="mEmissiveMap" fileId="37"/>
+      <CustomParameter name="lightControl" value="1 1 1 1"/>
+    </Material>
+    <Material name="lightPoleSet_mat" materialId="11">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31"/>
+      <Glossmap fileId="32"/>
+    </Material>
+    <Material name="2" materialId="17" customShaderId="8">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Custommap name="mMaskMap" fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="ProductionStorage3.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="Palettenlager" nodeId="61">
+      <Shape shapeId="1" name="Oberlicht" translation="-14.975 5.31584 -6.30001" static="true" nodeId="62" materialIds="12,7" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <Shape shapeId="2" name="Wand" translation="-9.595 2.03584 7.8366" static="true" nodeId="63" materialIds="17,16" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <Shape shapeId="3" name="Boden" translation="0 -0.182 0" static="true" nodeId="64" materialIds="22" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <Shape shapeId="4" name="Decke" translation="-14 7.06807 11.5" static="true" nodeId="65" materialIds="19,23" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <Shape shapeId="5" name="Solar" translation="1.79729e-07 7.01807 0" static="true" nodeId="66" materialIds="18,14" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <Shape shapeId="6" name="Solar.001" translation="1.79729e-07 7.01807 5" static="true" nodeId="67" materialIds="18,14" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <Shape shapeId="7" name="Solar.002" translation="1.79729e-07 7.01807 10" static="true" nodeId="68" materialIds="18,14" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <Shape shapeId="8" name="Solar.003" translation="1.79729e-07 7.01807 -5" static="true" nodeId="69" materialIds="18,14" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <Shape shapeId="9" name="Solar.004" translation="1.79729e-07 7.01807 -10" static="true" nodeId="70" materialIds="18,14" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <TransformGroup name="Animation" nodeId="71">
+        <Shape shapeId="10" name="Tuer_innen" translation="6.45 1.43752 12.2265" static="true" nodeId="72" materialIds="12" castsShadows="true" receiveShadows="true" distanceBlending="false">
+          <Shape shapeId="11" name="Blatt.001" translation="-0.565 -0.219927 -0.061532" kinematic="true" nodeId="73" materialIds="12,24" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="12" name="Griff_Tuer_innen.001" translation="0.965 -0.0495201 -0.0151539" kinematic="true" nodeId="74" materialIds="21" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </Shape>
+        </Shape>
+        <TransformGroup name="Rolltor_1" translation="10 0.565 12.16" nodeId="75">
+          <TransformGroup name="1" translation="0 3.5 0" nodeId="76">
+            <Shape shapeId="13" name="R1S8" translation="0 -0.25 0" kinematic="true" nodeId="77" materialIds="9,18" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="2" translation="0 3 0" nodeId="78">
+            <Shape shapeId="14" name="R1S7" translation="0 -0.25 0" kinematic="true" nodeId="79" materialIds="9,18" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="3" translation="0 2.5 0" nodeId="80">
+            <Shape shapeId="15" name="R1S6" translation="0 -0.25 0" kinematic="true" nodeId="81" materialIds="9,18" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="4" translation="0 2 0" nodeId="82">
+            <Shape shapeId="16" name="R1S5" translation="0 -0.25 0" kinematic="true" nodeId="83" materialIds="9,18" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="5" translation="0 1.5 0" nodeId="84">
+            <Shape shapeId="17" name="R1S4" translation="0 -0.25 0" kinematic="true" nodeId="85" materialIds="9,18" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="6" translation="0 1 0" nodeId="86">
+            <Shape shapeId="18" name="R1S3" translation="0 -0.25 0" kinematic="true" nodeId="87" materialIds="9,18" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="7" translation="0 0.5 0" nodeId="88">
+            <Shape shapeId="19" name="R1S2" translation="0 -0.25 0" kinematic="true" nodeId="89" materialIds="9,18" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="8" nodeId="90">
+            <Shape shapeId="20" name="R1S1" translation="0 -0.25 0" kinematic="true" nodeId="91" materialIds="9,18" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <Shape shapeId="21" name="Trigger" translation="2.29403e-07 1.312 -5.11308e-15" rotation="0 0 -1.00179e-05" static="true" trigger="true" collisionMask="1048576" clipDistance="500" nodeId="92" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <Shape shapeId="22" name="Trigger" translation="6.47423 1.45365 12.3576" rotation="0 0 -1.00179e-05" static="true" trigger="true" collisionMask="1048576" clipDistance="500" nodeId="93" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+      <Shape shapeId="23" name="Rolltorhalterung" translation="9.99732 3.92745 11.5342" static="true" nodeId="94" materialIds="15" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      <TransformGroup name="area" nodeId="95">
+        <TransformGroup name="startIndex" translation="-16 1.90735e-06 17" nodeId="96"/>
+        <TransformGroup name="widthIndex" translation="-16 0 -14" nodeId="97"/>
+        <TransformGroup name="heightIndex" translation="17 0 17" nodeId="98"/>
+      </TransformGroup>
+      <TransformGroup name="transform" nodeId="99"/>
+      <TransformGroup name="lightsOutdoor" translation="0 -0.18 0" nodeId="100">
+        <Shape shapeId="24" name="streetLightPoleLarge" translation="7.52122 0.0680005 12.652" rotation="-180 90 -180" clipDistance="100" nodeId="101" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="illum" visibility="false" nodeId="102">
+            <Shape shapeId="25" name="glass" translation="0 0 0.000256801" clipDistance="100" nodeId="103" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Light name="spotLight2" translation="-2.08664 7.78821 -5.2363e-07" rotation="-90 0 0" clipDistance="75" nodeId="104" type="spot" color="0.45 0.45 0.45" emitDiffuse="true" emitSpecular="true" decayRate="1" range="9" coneAngle="100" dropOff="1"/>
+          </TransformGroup>
+          <Shape shapeId="26" name="decals" clipDistance="30" nodeId="105" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="27" name="col" translation="-1.13481 3.96058 -4.00543e-07" visibility="false" static="true" density="0.0001" nodeId="106" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="24" name="streetLightPoleLarge" translation="14.6514 0.0680023 12.6518" rotation="-180 90 -180" clipDistance="100" nodeId="107" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="illum" visibility="false" nodeId="108">
+            <Shape shapeId="25" name="glass" translation="0 0 0.000256801" clipDistance="100" nodeId="109" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Light name="spotLight2" translation="-2.08664 7.78821 -5.2363e-07" rotation="-90 0 0" clipDistance="75" nodeId="110" type="spot" color="0.45 0.45 0.45" emitDiffuse="true" emitSpecular="true" decayRate="1" range="9" coneAngle="100" dropOff="1"/>
+          </TransformGroup>
+          <Shape shapeId="26" name="decals" clipDistance="30" nodeId="111" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="27" name="col" translation="-1.13481 3.96058 -4.00543e-07" visibility="false" static="true" density="0.0001" nodeId="112" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="24" name="streetLightPoleLarge" translation="-11.6774 0.067996 12.6518" rotation="-180 90 -180" clipDistance="100" nodeId="113" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="illum" visibility="false" nodeId="114">
+            <Shape shapeId="25" name="glass" translation="0 0 0.000256801" clipDistance="100" nodeId="115" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Light name="spotLight2" translation="-2.08664 7.78821 -5.2363e-07" rotation="-90 0 0" clipDistance="75" nodeId="116" type="spot" color="0.45 0.45 0.45" emitDiffuse="true" emitSpecular="true" decayRate="1" range="9" coneAngle="100" dropOff="1"/>
+          </TransformGroup>
+          <Shape shapeId="26" name="decals" clipDistance="30" nodeId="117" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="27" name="col" translation="-1.13481 3.96058 -4.00543e-07" visibility="false" static="true" density="0.0001" nodeId="118" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="24" name="streetLightPoleLarge" translation="-0.874466 0.0679986 12.6518" rotation="-180 90 -180" clipDistance="100" nodeId="119" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="illum" visibility="false" nodeId="120">
+            <Shape shapeId="25" name="glass" translation="0 0 0.000256801" clipDistance="100" nodeId="121" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Light name="spotLight2" translation="-2.08664 7.78821 -5.2363e-07" rotation="-90 0 0" clipDistance="75" nodeId="122" type="spot" color="0.45 0.45 0.45" emitDiffuse="true" emitSpecular="true" decayRate="1" range="9" coneAngle="100" dropOff="1"/>
+          </TransformGroup>
+          <Shape shapeId="26" name="decals" clipDistance="30" nodeId="123" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="27" name="col" translation="-1.13481 3.96058 -4.00543e-07" visibility="false" static="true" density="0.0001" nodeId="124" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="28" name="Trigger" translation="5.008 1.45366 12.888" rotation="0 90 0" static="true" trigger="true" collisionMask="1048576" clipDistance="500" nodeId="125" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="29" name="lightSwitch02" translation="5.06366 1.35274 12.5" rotation="180 0 180" static="true" nodeId="126" materialIds="13" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="30" name="switch" translation="-0.029 -1.43051e-09 -0.017" kinematic="true" nodeId="127" materialIds="4,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" nodeId="128">
+              <Shape shapeId="31" name="emissive" translation="0.0203687 -0.00541218 -0.00761006" scale="1.1 1.1 1" kinematic="true" nodeId="129" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0.028 0 -0.0216244" nodeId="130" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="0.05"/>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="lightIn" nodeId="131">
+        <TransformGroup name="light01" nodeId="132">
+          <Shape shapeId="29" name="lightSwitch02" translation="7.50386 1.26092 12.2" static="true" nodeId="133" materialIds="13" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="30" name="switch" translation="-0.029 -1.43051e-09 -0.017" kinematic="true" nodeId="134" materialIds="4,13" castsShadows="true" receiveShadows="true">
+              <TransformGroup name="light" nodeId="135">
+                <Shape shapeId="31" name="emissive" translation="0.0203687 -0.00541218 -0.00761006" scale="1.1 1.1 1" kinematic="true" nodeId="136" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Light name="light" translation="0.0282763 0 -0.0216244" nodeId="137" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="0.05"/>
+              </TransformGroup>
+            </Shape>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="13.4423 6.01846 0" rotation="180 90 180" static="true" nodeId="138" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="139">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="140" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="141" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="13.4423 6.01846 6.2506" rotation="180 90 180" static="true" nodeId="142" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="143">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="144" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="145" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="6 6.01846 6.2506" rotation="180 90 180" static="true" nodeId="146" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="147">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="148" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="149" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="-2 6.01846 6.251" rotation="180 90 180" static="true" nodeId="150" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="151">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="152" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="153" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="-10 6.01846 6.2506" rotation="180 90 180" static="true" nodeId="154" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="155">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="156" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="157" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="6 6.01846 0" rotation="180 90 180" static="true" nodeId="158" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="159">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="160" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="161" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="-2 6.01846 0" rotation="180 90 180" static="true" nodeId="162" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="163">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="164" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="165" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="-10 6.01846 0" rotation="180 90 180" static="true" nodeId="166" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="167">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="168" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="169" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="-10 6.01846 -6.251" rotation="180 90 180" static="true" nodeId="170" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="171">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="172" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="173" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="-2 6.01846 -6.251" rotation="180 90 180" static="true" nodeId="174" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="175">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="176" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="177" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="6 6.01846 -6.251" rotation="180 90 180" static="true" nodeId="178" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="179">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="180" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="181" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="32" name="Wannenleuchte02" translation="13.4423 6.01846 -6.251" rotation="180 90 180" static="true" nodeId="182" materialIds="6,13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="183">
+              <Shape shapeId="33" name="emissive" kinematic="true" nodeId="184" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="185" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="34" name="Trigger" translation="7.46371 1.45366 11.877" rotation="0 90 0" static="true" trigger="true" collisionMask="1048576" clipDistance="500" nodeId="186" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

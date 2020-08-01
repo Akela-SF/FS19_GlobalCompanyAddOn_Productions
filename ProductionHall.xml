@@ -1,49 +1,538 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable>
     <storeData>
-        <name>$l10n_GlobalCompanyPlaceable_GlobalMarket_shopItem</name>
+        <name>$l10n_GlobalCompanyAddOn_Productions_shopItem_hall</name>
         <functions>
-            <function>$l10n_GlobalCompanyPlaceable_GlobalMarket_function</function>
+            <function>$l10n_GlobalCompanyAddOn_Productions_shopItem_function_hall</function>
         </functions>
         <specs>
         
         </specs>
-        <image>store_globalMarket.dds</image>
-        <price>35000</price>
+        <image>store_productionHall.dds</image>
+        <price>45000</price>
         <lifetime>1000</lifetime>
-        <dailyUpkeep>0</dailyUpkeep>
+        <dailyUpkeep>100</dailyUpkeep>
         <rotation>0</rotation>
-        <brand>GCPLACEABLE</brand>
+        <brand>GCRODUCTIONS</brand>
         <species>placeable</species>
         <category>globalCompanyPlaceable</category>
     </storeData>
 
     <placeableType>placeable</placeableType>
-    <filename>Lager_Kevin.i3d</filename>
-    <placement testSizeX="25" testSizeZ="25" sizeX="50" sizeZ="50" useRandomYRotation="false" useManualYRotation="true" />
-
-    
-    	
-    <triggerMarkers>
-        <!--triggerMarker node="5" /-->
-    </triggerMarkers>
-	
+    <filename>ProductionHall.i3d</filename>
+    <placement testSizeX="20" testSizeZ="15" sizeX="40" sizeZ="31" useRandomYRotation="false" useManualYRotation="true" />
+  
     <clearAreas>
-        <!--clearArea startNode="3|0" widthNode="3|0|0" heightNode="3|0|1"/-->
+        <clearArea startNode="14|0" widthNode="14|1" heightNode="14|2"/>
     </clearAreas>
 	
     <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
-        <!--levelAreas>
-            <levelArea startNode="3|0" widthNode="3|0|0" heightNode="3|0|1" groundType="asphalt"/>
-            <levelArea startNode="3|1" widthNode="3|1|0" heightNode="3|1|1" groundType="grass"/>
-            <levelArea startNode="3|2" widthNode="3|2|0" heightNode="3|2|1" groundType="dirt"/>
-        </levelAreas-->
+        <levelAreas>
+            <levelArea startNode="14|0" widthNode="14|1" heightNode="14|2" groundType="asphalt"/>
+        </levelAreas>
     </leveling>
 
-    <dayNightObjects>
-        
-        
-    </dayNightObjects>
+    <tipOcclusionUpdateArea sizeX="40" sizeZ="31" />
 
-    <tipOcclusionUpdateArea sizeX="50" sizeZ="50" />
+    <seasons>
+        <maskAreas>
+            <maskArea startNode="14|0" widthNode="14|1" heightNode="14|2"/>
+        </maskAreas>
+    </seasons>
+
+    <animatedObjects>
+        <animatedObject index="Rolltor1">
+            <animation initialTime="0" duration="5">
+                <part node="11|8|0">				
+                    <Keyframe time="0" translation="0 3.5 0" rotation="0 0 0"/>
+                    <Keyframe time="0.3" translation="0 4.85 0" rotation="0 0 0"/>
+                    <Keyframe time="0.4" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>
+                    <Keyframe time="0.5" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>
+                    <Keyframe time="0.6" translation="0 5.20499992 -1.427" rotation="-90 0 0"/>
+                    <Keyframe time="0.7" translation="0 5.20499992 -1.927" rotation="-90 0 0"/>
+                    <Keyframe time="0.8" translation="0 5.20499992 -2.428" rotation="-90 0 0"/>
+                    <Keyframe time="0.9" translation="0 5.20499992 -2.928" rotation="-90 0 0"/>
+                </part>
+                <part node="11|8|1">	
+                    <Keyframe time="0" translation="0 3 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 4.35 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 4.864 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.5" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                    <Keyframe time="0.6" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>
+                    <Keyframe time="0.7" translation="0 5.20499992 -1.427" rotation="-90 0 0"/>
+                    <Keyframe time="0.8" translation="0 5.20499992 -1.927" rotation="-90 0 0"/>
+                    <Keyframe time="0.9" translation="0 5.20499992 -2.428" rotation="-90 0 0"/>
+                </part>
+                <part node="11|8|2">	
+                    <Keyframe time="0" translation="0 2.5 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 3.85 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 4.366 0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" translation="0 4.882 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                    <Keyframe time="0.7" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>
+                    <Keyframe time="0.8" translation="0 5.20499992 -1.427" rotation="-90 0 0"/>
+                    <Keyframe time="0.9" translation="0 5.20499992 -1.927" rotation="-90 0 0"/>
+                </part>
+                <part node="11|8|3">	
+                    <Keyframe time="0" translation="0 2 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 3.35 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 3.866 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.5" translation="0 4.382 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 4.898 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                    <Keyframe time="0.8" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>	
+                    <Keyframe time="0.9" translation="0 5.20499992 -1.427" rotation="-90 0 0"/>
+                </part>
+                <part node="11|8|4">	
+                    <Keyframe time="0" translation="0 1.5 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 2.85 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 3.366 0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" translation="0 3.882 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 4.398 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 4.914 0" rotation="0 0 0"/>
+                    <Keyframe time="0.8" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                    <Keyframe time="0.9" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>	
+                </part>
+                <part node="11|8|5">	
+                    <Keyframe time="0" translation="0 1 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 2.35 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 2.866 0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" translation="0 3.382 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 3.898 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 4.414 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.8" translation="0 4.93 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.9" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                </part>
+                <part node="11|8|6">	
+                    <Keyframe time="0" translation="0 0.5 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 1.85 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 2.366 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.5" translation="0 2.882 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 3.398 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 3.914 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.8" translation="0 4.43 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.9" translation="0 4.946 0" rotation="0 0 0"/>	
+                </part>
+                <part node="11|8|7">	
+                    <Keyframe time="0" translation="0 0 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 1.35 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 1.866 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.5" translation="0 2.382 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 2.898 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 3.414 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.8" translation="0 3.93 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.9" translation="0 4.446 0" rotation="0 0 0"/>	
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|8|8" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/tools/rollbelt/rollbelt_loop.wav" loops="0" linkNode="11|8|4" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Rolltor2">
+            <animation initialTime="0" duration="5">
+                <part node="11|9|0">				
+                    <Keyframe time="0" translation="0 3.5 0" rotation="0 0 0"/>
+                    <Keyframe time="0.3" translation="0 4.85 0" rotation="0 0 0"/>
+                    <Keyframe time="0.4" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>
+                    <Keyframe time="0.5" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>
+                    <Keyframe time="0.6" translation="0 5.20499992 -1.427" rotation="-90 0 0"/>
+                    <Keyframe time="0.7" translation="0 5.20499992 -1.927" rotation="-90 0 0"/>
+                    <Keyframe time="0.8" translation="0 5.20499992 -2.428" rotation="-90 0 0"/>
+                    <Keyframe time="0.9" translation="0 5.20499992 -2.928" rotation="-90 0 0"/>
+                </part>
+                <part node="11|9|1">	
+                    <Keyframe time="0" translation="0 3 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 4.35 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 4.864 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.5" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                    <Keyframe time="0.6" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>
+                    <Keyframe time="0.7" translation="0 5.20499992 -1.427" rotation="-90 0 0"/>
+                    <Keyframe time="0.8" translation="0 5.20499992 -1.927" rotation="-90 0 0"/>
+                    <Keyframe time="0.9" translation="0 5.20499992 -2.428" rotation="-90 0 0"/>
+                </part>
+                <part node="11|9|2">	
+                    <Keyframe time="0" translation="0 2.5 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 3.85 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 4.366 0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" translation="0 4.882 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                    <Keyframe time="0.7" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>
+                    <Keyframe time="0.8" translation="0 5.20499992 -1.427" rotation="-90 0 0"/>
+                    <Keyframe time="0.9" translation="0 5.20499992 -1.927" rotation="-90 0 0"/>
+                </part>
+                <part node="11|9|3">	
+                    <Keyframe time="0" translation="0 2 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 3.35 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 3.866 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.5" translation="0 4.382 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 4.898 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                    <Keyframe time="0.8" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>	
+                    <Keyframe time="0.9" translation="0 5.20499992 -1.427" rotation="-90 0 0"/>
+                </part>
+                <part node="11|9|4">	
+                    <Keyframe time="0" translation="0 1.5 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 2.85 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 3.366 0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" translation="0 3.882 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 4.398 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 4.914 0" rotation="0 0 0"/>
+                    <Keyframe time="0.8" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                    <Keyframe time="0.9" translation="0 5.20499992 -0.9281618" rotation="-90 0 0"/>	
+                </part>
+                <part node="11|9|5">	
+                    <Keyframe time="0" translation="0 1 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 2.35 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 2.866 0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" translation="0 3.382 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 3.898 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 4.414 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.8" translation="0 4.93 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.9" translation="0 5.205 -0.4" rotation="-50.927 0 0"/>	
+                </part>
+                <part node="11|9|6">	
+                    <Keyframe time="0" translation="0 0.5 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 1.85 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 2.366 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.5" translation="0 2.882 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 3.398 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 3.914 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.8" translation="0 4.43 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.9" translation="0 4.946 0" rotation="0 0 0"/>	
+                </part>
+                <part node="11|9|7">	
+                    <Keyframe time="0" translation="0 0 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.3" translation="0 1.35 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.4" translation="0 1.866 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.5" translation="0 2.382 0" rotation="0 0 0"/>		
+                    <Keyframe time="0.6" translation="0 2.898 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.7" translation="0 3.414 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.8" translation="0 3.93 0" rotation="0 0 0"/>	
+                    <Keyframe time="0.9" translation="0 4.446 0" rotation="0 0 0"/>	
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|9|8" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/tools/rollbelt/rollbelt_loop.wav" loops="0" linkNode="11|9|4" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Door1">
+            <animation initialTime="0" duration="2">
+                <part node="11|0|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.3" rotation="0 0 27.03800011"/>
+                    <Keyframe time="0.35" rotation="0 0 27.03800011"/>
+                    <Keyframe time="0.6" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 0 0"/>
+                </part>
+                <part node="11|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.3" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|12" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving file="sounds/Door2.ogg" loops="1" linkNode="11|0|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Door2">
+            <animation initialTime="0" duration="2">
+                <part node="11|1|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.3" rotation="-27 0 0"/>
+                    <Keyframe time="0.35" rotation="-27 0 0"/>
+                    <Keyframe time="0.6" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 0 0"/>
+                </part>
+                <part node="11|1|0">				
+                    <Keyframe time="0.3" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 110 0"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|13" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving file="sounds/Door2.ogg" loops="1" linkNode="11|1|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Door3">
+            <animation initialTime="0" duration="2">
+                <part node="11|2|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.3" rotation="-27 0 0"/>
+                    <Keyframe time="0.35" rotation="-27 0 0"/>
+                    <Keyframe time="0.6" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 0 0"/>
+                </part>
+                <part node="11|2|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.3" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|14" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving file="sounds/Door2.ogg" loops="1" linkNode="11|2|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Door4">
+            <animation initialTime="0" duration="2">
+                <part node="11|4">				
+                    <Keyframe time="0" translation="-10.64999962 1.24214995 -0.197528"/>
+                    <Keyframe time="1" translation="-12.20300007 1.24214995 -0.197528"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|11" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving file="sounds/Door1.ogg" loops="0" linkNode="11|4" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Door5">
+            <animation initialTime="0" duration="2">
+                <part node="11|3">				
+                    <Keyframe time="0" translation="-2.26099992 1.24214995 -0.197528"/>
+                    <Keyframe time="1" translation="-3.83100009 1.24214995 -0.197528"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|10" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving file="sounds/Door1.ogg" loops="0" linkNode="11|3" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Window1">
+            <animation initialTime="0" duration="2">
+                <part node="11|5|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="90 0 0"/>
+                    <Keyframe time="1" rotation="90 0 0"/>
+                </part>
+                <part node="11|5|1|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="-90 0 0"/>
+                    <Keyframe time="1" rotation="-90 0 0"/>
+                </part>
+                <part node="11|5|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 105 0"/>
+                </part>
+                <part node="11|5|1">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 -105 0"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|17" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving file="sounds/Door3.ogg" loops="1" linkNode="11|5" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Window2">
+            <animation initialTime="0" duration="2">
+                <part node="11|6|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="90 0 0"/>
+                    <Keyframe time="1" rotation="90 0 0"/>
+                </part>
+                <part node="11|6|1|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="-90 0 0"/>
+                    <Keyframe time="1" rotation="-90 0 0"/>
+                </part>
+                <part node="11|6|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 105 0"/>
+                </part>
+                <part node="11|6|1">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 -105 0"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|15" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving file="sounds/Door3.ogg" loops="1" linkNode="11|6" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Window3">
+            <animation initialTime="0" duration="2">
+                <part node="11|7|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="90 0 0"/>
+                    <Keyframe time="1" rotation="90 0 0"/>
+                </part>
+                <part node="11|7|1|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="-90 0 0"/>
+                    <Keyframe time="1" rotation="-90 0 0"/>
+                </part>
+                <part node="11|7|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 105 0"/>
+                </part>
+                <part node="11|7|1">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.2" rotation="0 0 0"/>
+                    <Keyframe time="1" rotation="0 -105 0"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="11|16" posText="action_openWindow" negText="action_closeWindow" />
+            <sounds>
+                <moving file="sounds/Door3.ogg" loops="1" linkNode="11|7" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject index="Light1">
+            <animation initialTime="0" duration="1">
+                <part node="15|7|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" rotation="-6.484 0 0"/>
+                    <Keyframe time="1" rotation="0 0 0"/>
+                </part>
+                <part node="15|0|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="15|1|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="15|2|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="15|3|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="15|4|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="15|5|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="15|6" posText="action_lightOn" negText="action_lightOff" />
+        </animatedObject>
+        <animatedObject index="Light2">
+            <animation initialTime="0" duration="1">
+                <part node="16|0|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" rotation="-6.484 0 0"/>
+                    <Keyframe time="1" rotation="0 0 0"/>
+                </part>
+                <part node="16|0|1|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|2|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|3|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|4|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|5|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|6|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|7|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|8|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|9|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|10|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|11|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|0|12|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>                
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="16|0|13" posText="action_lightOn" negText="action_lightOff" />
+        </animatedObject>
+        <animatedObject index="Light3">
+            <animation initialTime="0" duration="1">
+                <part node="16|1|0|0">				
+                    <Keyframe time="0" rotation="0 0 0"/>
+                    <Keyframe time="0.5" rotation="-6.484 0 0"/>
+                    <Keyframe time="1" rotation="0 0 0"/>
+                </part>
+                <part node="16|1|1|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|2|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|3|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|4|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|5|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|6|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|7|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|8|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|9|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|10|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|11|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>
+                <part node="16|1|12|0">				
+                    <Keyframe time="0" visibility="false"/>
+                    <Keyframe time="1" visibility="true"/>
+                </part>           
+            </animation>
+            <controls posAction="ACTIVATE_HANDTOOL" triggerNode="16|1|13" posText="action_lightOn" negText="action_lightOff" />
+        </animatedObject>
+	</animatedObjects>
 </placeable>

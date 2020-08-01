@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="gcProductionItem">
+    <storeData>
+        <name>$l10n_GlobalCompanyAddOn_Productions_shopItem_bucket</name>
+        <functions>
+            <function>$l10n_GlobalCompanyAddOn_Productions_shopItem_function_bucket</function>
+        </functions>
+        <image>items/store_bucket.dds</image>
+        <price>30</price>
+        <category>gcProduction</category>
+        <brand>GCRODUCTIONS</brand>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <financeCategory>OTHER</financeCategory>
+    </storeData>
+
+    <base>
+        <filename>items/Bucket.i3d</filename>
+        <size width="0.4" length="0.8" />
+        <input allowed="false"/>
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="10"/>
+        </components>
+    </base>
+
+    <gcExtendedFilltype filltypeCategorie="LIQUID" startFillLevel="0" capacity="10">
+        <showIfFull node="deckel" />
+        <setFilltypeColor>
+            <color node="plane" material="colorMat1" />
+        </setFilltypeColor>
+        
+        <movers>
+            <mover node="plane">
+                <translation minimum="0 0 0" maximum="0 0.322 0" />
+            </mover>
+        </movers>	
+    </gcExtendedFilltype>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="bucket_main_component1"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <baseMaterial>
+        <material name="bucket_mat" baseNode="bucket_vis">
+            <shaderParameter name="colorMat0" value="AGRISEM_YELLOW1"/>
+        </material>
+    </baseMaterial>
+
+    <baseMaterialConfigurations price="100" useDefaultColors="true" defaultColorIndex="11">
+        <material name="bucket_mat" shaderParameter="colorMat0" />
+    </baseMaterialConfigurations>
+
+    <i3dMappings>
+        <i3dMapping id="bucket_main_component1" node="0>" />
+        <i3dMapping id="bucket_vis" node="0>0" />
+        <i3dMapping id="deckel" node="0>2" />
+        <i3dMapping id="plane" node="0>3" />
+    </i3dMappings>
+</vehicle>

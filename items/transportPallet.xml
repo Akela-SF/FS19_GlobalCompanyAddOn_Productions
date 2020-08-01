@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="gcProductionItemNone">
+	<storeData>
+        <name>$l10n_GlobalCompanyAddOn_Productions_shopItem_transportPallet</name>
+        <functions>
+            <function>$l10n_GlobalCompanyAddOn_Productions_function_transportPallet</function>			
+        </functions>
+        <image>items/store_transportpallet.dds</image>
+        <price>50</price>
+		<allowLeasing>false</allowLeasing>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>GCRODUCTIONS</brand>
+        <category>gcProduction</category>
+        <vertexBufferMemoryUsage>522328</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>73326</indexBufferMemoryUsage>
+        <textureMemoryUsage>8907552</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+	<base>
+        <typeDesc>$l10n_typeDesc_transportPallet</typeDesc>
+        <filename>items/transportPallet.i3d</filename>
+        <components>
+            <component centerOfMass="0 -0.1 0" solverIterationCount="10" mass="30"/>
+        </components>
+    </base>
+	
+	<tensionBelts>
+		<tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts" jointNode="main_component" width="0.075" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+                    <tensionBelt startNode="tensionBeltStart1" endNode="tensionBeltEnd1" offsetLeft="0.2"/>
+                    <tensionBelt startNode="tensionBeltStart2" endNode="tensionBeltEnd2"/>
+					<tensionBelt startNode="tensionBeltStart3" endNode="tensionBeltEnd3"/>
+					<tensionBelt startNode="tensionBeltStart4" endNode="tensionBeltEnd4"/>
+                </tensionBelts>
+			</tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+	<tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltNode"/>
+        </meshNodes>
+    </tensionBeltObject>
+		
+	<i3dMappings>
+		<i3dMapping id="main_component" node="0>"/>
+		<i3dMapping id="tensionBeltNode" node="0>0"/>
+		<i3dMapping id="tensionBelts" node="0>3"/>
+        <i3dMapping id="tensionBeltStart1" node="0>3|0"/>
+        <i3dMapping id="tensionBeltEnd1" node="0>3|0|0"/>
+        <i3dMapping id="tensionBeltStart2" node="0>3|1"/>
+        <i3dMapping id="tensionBeltEnd2" node="0>3|1|0"/>
+		<i3dMapping id="tensionBeltStart3" node="0>3|2"/>
+        <i3dMapping id="tensionBeltEnd3" node="0>3|2|0"/>
+		<i3dMapping id="tensionBeltStart4" node="0>3|3"/>
+        <i3dMapping id="tensionBeltEnd4" node="0>3|3|0"/>
+		<i3dMapping id="beltActivationTrigger" node="0>3|4"/>
+		
+	</i3dMappings>
+</vehicle>

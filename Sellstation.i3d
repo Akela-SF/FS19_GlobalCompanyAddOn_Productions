@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="35" filename="$data/maps/textures/american/props/cardboardBoxes_diffuse.png"/>
+    <File fileId="36" filename="$data/maps/textures/american/props/cardboardBoxes_normal.png"/>
+    <File fileId="37" filename="$data/maps/textures/american/props/cardboardBoxes_specular.png"/>
+    <File fileId="26" filename="$data/maps/textures/american/props/townPlants01_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/textures/american/props/townPlants01_normal.png"/>
+    <File fileId="28" filename="$data/maps/textures/american/props/townPlants01_specular.png"/>
+    <File fileId="29" filename="$data/maps/textures/american/props/townPlants02_diffuse.png"/>
+    <File fileId="30" filename="$data/maps/textures/american/props/townPlants02_normal.png"/>
+    <File fileId="31" filename="$data/maps/textures/american/props/townPlants02_specular.png"/>
+    <File fileId="32" filename="$data/maps/textures/european/props/electricSwitchBoxSet_diffuse.png"/>
+    <File fileId="33" filename="$data/maps/textures/european/props/electricSwitchBoxSet_normal.png"/>
+    <File fileId="34" filename="$data/maps/textures/european/props/electricSwitchBoxSet_specular.png"/>
+    <File fileId="38" filename="$data/maps/textures/european/props/palletTruck_diffuse.png"/>
+    <File fileId="39" filename="$data/maps/textures/european/props/palletTruck_normal.png"/>
+    <File fileId="40" filename="$data/maps/textures/european/props/palletTruck_specular.png"/>
+    <File fileId="41" filename="$data/maps/textures/european/props/publicStandTrashCanSet_diffuse.png"/>
+    <File fileId="42" filename="$data/maps/textures/european/props/publicStandTrashCanSet_normal.png"/>
+    <File fileId="43" filename="$data/maps/textures/european/props/publicStandTrashCanSet_specular.png"/>
+    <File fileId="60" filename="$data/objects/pallets/pallet_diffuse.png"/>
+    <File fileId="61" filename="$data/objects/pallets/pallet_normal.png"/>
+    <File fileId="62" filename="$data/objects/pallets/pallet_specular.png"/>
+    <File fileId="6" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="53" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="52" filename="$data/shared/default_normal.dds"/>
+    <File fileId="24" filename="$data/shared/default_specular.dds"/>
+    <File fileId="57" filename="$data/shared/window02_diffuse.dds"/>
+    <File fileId="58" filename="$data/shared/window02_specular.dds"/>
+    <File fileId="22" filename="$data/shared/window_diffuse.dds"/>
+    <File fileId="23" filename="$data/shared/window_specular.dds"/>
+    <File fileId="59" filename="textures/HiveHoney_decal.dds"/>
+    <File fileId="44" filename="textures/Kasse_1.dds"/>
+    <File fileId="45" filename="textures/Kasse_1_nor.dds"/>
+    <File fileId="51" filename="textures/Lichtabdeckung_AN.dds"/>
+    <File fileId="49" filename="textures/Lichtabdeckung_AUS.dds"/>
+    <File fileId="46" filename="textures/LightSet_Diffuse.dds"/>
+    <File fileId="48" filename="textures/Schalterlicht_AN.dds"/>
+    <File fileId="47" filename="textures/Schalterlicht_AUS.dds"/>
+    <File fileId="14" filename="textures/Weiss_2.dds"/>
+    <File fileId="15" filename="textures/Weiss_2_normal.dds"/>
+    <File fileId="1" filename="textures/aluminium_metal_diff.dds"/>
+    <File fileId="2" filename="textures/aluminium_metal_nor.dds"/>
+    <File fileId="20" filename="textures/basalt square nor.dds"/>
+    <File fileId="19" filename="textures/basalt square.dds"/>
+    <File fileId="5" filename="textures/cherry raw wood nor.dds"/>
+    <File fileId="4" filename="textures/cherry raw wood.dds"/>
+    <File fileId="13" filename="textures/cladding stone nor.dds"/>
+    <File fileId="12" filename="textures/cladding stone.dds"/>
+    <File fileId="17" filename="textures/clay roofing nor.dds"/>
+    <File fileId="16" filename="textures/clay roofing.dds"/>
+    <File fileId="21" filename="textures/gruen.dds"/>
+    <File fileId="7" filename="textures/mask_2.dds"/>
+    <File fileId="63" filename="textures/plane_apple.dds"/>
+    <File fileId="64" filename="textures/plane_cherry.dds"/>
+    <File fileId="65" filename="textures/plane_pear.dds"/>
+    <File fileId="66" filename="textures/plane_plum.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="townPlants02_mat" materialId="23">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30" bumpDepth="0"/>
+      <Glossmap fileId="31"/>
+    </Material>
+    <Material name="redlight_mat" materialId="24">
+      <Texture fileId="47"/>
+    </Material>
+    <Material name="Holz" materialId="19" customShaderId="6">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="18" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="emissiveplastic_mat" materialId="7" diffuseColor="1 1 1 1">
+      <Emissivemap fileId="51"/>
+    </Material>
+    <Material name="cardboardBoxes_mat" materialId="21">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+    </Material>
+    <Material name="Alu" materialId="4" specularColor="0.4 1 0.4" customShaderId="6">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="palletTruck_mat" materialId="11">
+      <Texture fileId="38"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="40"/>
+    </Material>
+    <Material name="plasticlite_mat" materialId="5">
+      <Texture fileId="49"/>
+    </Material>
+    <Material name="green" materialId="17" customShaderId="6">
+      <Texture fileId="21"/>
+      <Normalmap fileId="15"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+    </Material>
+    <Material name="Stone" materialId="22" customShaderId="6">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+    </Material>
+    <Material name="decal4" materialId="6">
+      <Texture fileId="59"/>
+    </Material>
+    <Material name="electricSwitchBoxSet_mat" materialId="8">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="Glas" materialId="12" alphaBlending="true">
+      <Texture fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="emissivered_mat" materialId="9">
+      <Texture fileId="48"/>
+    </Material>
+    <Material name="townPlants01_mat" materialId="14">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27" bumpDepth="0"/>
+      <Glossmap fileId="28"/>
+    </Material>
+    <Material name="Glas" materialId="10" alphaBlending="true" customShaderId="6">
+      <Texture fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="roof" materialId="15" specularColor="0.2 1 0.2" customShaderId="6">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+    </Material>
+    <Material name="Alu" materialId="20" specularColor="0.4 1 0.4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="lambert1" materialId="13" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Glas" materialId="16" alphaBlending="true">
+      <Texture fileId="57"/>
+      <Glossmap fileId="58"/>
+    </Material>
+    <Material name="pallet_mat" materialId="31">
+      <Texture fileId="60"/>
+      <Normalmap fileId="61"/>
+      <Glossmap fileId="62"/>
+    </Material>
+    <Material name="Deckel" materialId="32" diffuseColor="1 1 1 1" customShaderId="53" customShaderVariation="colorMask">
+      <Normalmap fileId="52"/>
+      <Glossmap fileId="24"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 0.31 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="er" materialId="33" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="53" customShaderVariation="colorMask">
+      <Normalmap fileId="52"/>
+      <Glossmap fileId="24"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat1" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="plane2" materialId="34">
+      <Texture fileId="66"/>
+    </Material>
+    <Material name="LightSet_mat" materialId="35">
+      <Texture fileId="46"/>
+    </Material>
+    <Material name="plane2" materialId="37">
+      <Texture fileId="65"/>
+    </Material>
+    <Material name="withe" materialId="38" customShaderId="6">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+    </Material>
+    <Material name="plane2" materialId="39">
+      <Texture fileId="64"/>
+    </Material>
+    <Material name="ert" materialId="28" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="53" customShaderVariation="colorMask">
+      <Normalmap fileId="52"/>
+      <Glossmap fileId="24"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.81 0.56 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Fliessen" materialId="36" customShaderId="6">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+    </Material>
+    <Material name="publicStandTrashCanSet_mat" materialId="25">
+      <Texture fileId="41"/>
+      <Normalmap fileId="42"/>
+      <Glossmap fileId="43"/>
+    </Material>
+    <Material name="Kasse" materialId="27">
+      <Texture fileId="44"/>
+      <Normalmap fileId="45"/>
+    </Material>
+    <Material name="Holz" materialId="26" customShaderId="6">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+    </Material>
+    <Material name="plane2" materialId="29">
+    </Material>
+    <Material name="plane2" materialId="30">
+      <Texture fileId="63"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Sellstation.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="Verkauf" nodeId="89">
+      <TransformGroup name="Haus" nodeId="90">
+        <Shape shapeId="1" name="alu" translation="0 0.299195 3.55345e-08" static="true" nodeId="91" materialIds="20" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="2" name="Deko" translation="0.4 6.95 -5.14554" static="true" nodeId="92" materialIds="26" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="3" name="stone" translation="0 0.299195 3.55345e-08" static="true" nodeId="93" materialIds="22" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="4" name="withe" translation="0 0.299195 3.55345e-08" static="true" nodeId="94" materialIds="38" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="5" name="wood" translation="0 0.299195 3.55345e-08" static="true" nodeId="95" materialIds="26" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="roof" translation="0 0.299195 3.55345e-08" static="true" nodeId="96" materialIds="15" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="7" name="floor" translation="0 0.299195 3.55345e-08" static="true" nodeId="97" materialIds="36" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="8" name="green" translation="0 0.299195 0" static="true" nodeId="98" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="9" name="Fenster" translation="2.49388 2.15 -3.3" static="true" nodeId="99" materialIds="10,19" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="10" name="plantPot04" translation="1.7308 0.6 1.21978" scale="0.35 0.349803 0.349803" static="true" density="0.6" nodeId="100" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="11" name="plantPot04_vis" clipDistance="151" nodeId="101" materialIds="14" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="12" name="plantPot04Foliage" clipDistance="151" nodeId="102" materialIds="23" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </Shape>
+        <Shape shapeId="13" name="switchBox01" translation="-1.19131 0.216282 6.21416" rotation="-2.45994e-06 0 2.75639e-05" clipDistance="50" nodeId="103" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="14" name="col" translation="-0.0122116 2.66294e-07 -0.0140161" visibility="false" static="true" density="0.0001" nodeId="104" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="15" name="cardboardBox08" translation="-0.705393 0.6 0.599442" rotation="-1.84869e-06 -43.078 4.68376e-06" dynamic="true" density="0.75" clipDistance="64" nodeId="105" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="16" name="cardboardBox08_vis" translation="-7.28306e-16 0 0" clipDistance="64" nodeId="106" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="17" name="cardboardBox01" translation="-0.814647 0.600001 3.81164" rotation="0.000321426 -89.7529 -0.000327261" dynamic="true" density="0.75" clipDistance="64" nodeId="107" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="18" name="cardboardBox01_vis" clipDistance="64" nodeId="108" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="19" name="cardboardBox09" translation="-0.676225 0.6 1.81476" rotation="5.21011e-06 45 -5.00896e-06" dynamic="true" density="0.75" clipDistance="64" nodeId="109" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="20" name="cardboardBox09_vis" translation="0 5.9952e-15 -4.26326e-16" clipDistance="64" nodeId="110" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="15" name="cardboardBox08" translation="-1.82388 0.6 0.633418" rotation="-1.84869e-06 96.0571 4.68376e-06" dynamic="true" density="0.75" clipDistance="64" nodeId="111" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="16" name="cardboardBox08_vis" translation="-7.28306e-16 0 0" clipDistance="64" nodeId="112" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="19" name="cardboardBox09" translation="-0.788287 0.6 2.67602" rotation="5.21011e-06 200.659 -5.00896e-06" dynamic="true" density="0.75" clipDistance="64" nodeId="113" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="20" name="cardboardBox09_vis" translation="0 5.9952e-15 -4.26326e-16" clipDistance="64" nodeId="114" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="plantPot04" translation="1.77359 0.6 -1.17965" scale="0.35 0.349803 0.349803" static="true" density="0.6" nodeId="115" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="11" name="plantPot04_vis" clipDistance="151" nodeId="116" materialIds="14" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="12" name="plantPot04Foliage" clipDistance="151" nodeId="117" materialIds="23" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </Shape>
+        <Shape shapeId="21" name="palletTruck" translation="-1.15511 -0.00927737 -6.58516" rotation="-1.64681e-05 -89.001 1.64653e-05" clipDistance="35" nodeId="118" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="22" name="col" translation="0 0 0.386244" visibility="false" static="true" density="0.0001" nodeId="119" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="23" name="publicStandTrashCanColored" translation="2.64636 -0.00878852 0.84968" rotation="0 90 0" clipDistance="40" nodeId="120" materialIds="25" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="24" name="col" translation="0.0467276 0 0" visibility="false" static="true" density="0.0001" nodeId="121" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="25" name="Kasse" translation="-1.5299 1.96407 0.538693" rotation="180 0 180" scale="1.2 1.2 1.2" static="true" nodeId="122" materialIds="27" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      </TransformGroup>
+      <TransformGroup name="Animation" nodeId="123">
+        <Shape shapeId="26" name="Tuer_innen" translation="-2.314 1.96945 4.9506" static="true" nodeId="124" materialIds="19,20" castsShadows="true" receiveShadows="true" distanceBlending="false">
+          <Shape shapeId="27" name="Blatt.001" translation="0.0615344 -0.22 -0.565001" kinematic="true" nodeId="125" materialIds="19,20,12" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="28" name="Griff_Tuer_innen.001" translation="0.0151527 -0.0495205 0.965" rotation="-90 -0 0" scale="100 100 100" kinematic="true" nodeId="126" materialIds="4" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="29" name="Trigger" translation="0.0121452 -0.71419 0.39107" rotation="-0 90 0" static="true" trigger="true" collisionMask="1048576" clipDistance="500" nodeId="127" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="30" name="Tuer_innen.001" translation="1.44057 1.96945 0" static="true" nodeId="128" materialIds="19,20" castsShadows="true" receiveShadows="true" distanceBlending="false">
+          <Shape shapeId="31" name="Blatt.002" translation="-0.0615289 -0.22 0.565" rotation="7.69542e-06 0 7.6126e-06" kinematic="true" nodeId="129" materialIds="19,20,12" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="28" name="Griff_Tuer_innen.002" translation="-0.0151531 -0.0495205 -0.965" rotation="90 -8.65142e-06 180" scale="100 100 100" kinematic="true" nodeId="130" materialIds="4" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="29" name="Trigger" translation="-0.0961269 -0.501 -0.138739" rotation="-0 90 0" static="true" trigger="true" collisionMask="1048576" clipDistance="500" nodeId="131" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="lightIn" nodeId="132">
+        <TransformGroup name="light01" nodeId="133">
+          <Shape shapeId="32" name="lightSwitch02" translation="-2.28642 1.66763 4.02832" rotation="0 -90 0" static="true" nodeId="134" materialIds="35" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="33" name="switch" translation="-0.029 -1.43051e-09 -0.017" kinematic="true" nodeId="135" materialIds="24,35" castsShadows="true" receiveShadows="true">
+              <TransformGroup name="light" nodeId="136">
+                <Shape shapeId="34" name="emissive" translation="0.0203687 -0.00541218 -0.00761006" scale="1.1 1.1 1" kinematic="true" nodeId="137" materialIds="9" castsShadows="true" receiveShadows="true"/>
+                <Light name="light" translation="0.0282763 0 -0.0216244" nodeId="138" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="0.05"/>
+              </TransformGroup>
+            </Shape>
+          </Shape>
+          <Shape shapeId="29" name="Trigger" translation="-2.08325 1.434 3.93981" rotation="-0 90 0" static="true" trigger="true" collisionMask="1048576" clipDistance="500" nodeId="139" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="35" name="Wannenleuchte02" translation="1.40145e-08 4.557 4.168" rotation="-180 0 -180" static="true" nodeId="140" materialIds="5,35" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="141">
+              <Shape shapeId="36" name="emissive" kinematic="true" nodeId="142" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="143" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="35" name="Wannenleuchte02" translation="7.8033e-14 4.557 0" rotation="-180 0 -180" static="true" nodeId="144" materialIds="5,35" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="145">
+              <Shape shapeId="36" name="emissive" kinematic="true" nodeId="146" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="147" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="35" name="Wannenleuchte02" translation="-1.44937e-14 4.557 -4.168" rotation="-180 0 -180" static="true" nodeId="148" materialIds="5,35" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="light" visibility="false" nodeId="149">
+              <Shape shapeId="36" name="emissive" kinematic="true" nodeId="150" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Light name="light" translation="0 -0.3 0" nodeId="151" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="9"/>
+            </TransformGroup>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="area" nodeId="152">
+        <TransformGroup name="startIndex" translation="-6 1.90735e-06 8" nodeId="153"/>
+        <TransformGroup name="widthIndex" translation="-6 0 -8" nodeId="154"/>
+        <TransformGroup name="heightIndex" translation="3 0 8" nodeId="155"/>
+      </TransformGroup>
+      <Camera name="camera" translation="-12.2161 10.0879 2.72089" rotation="-47.4404 -76.2959 9.00957e-06" nodeId="156" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+      <TransformGroup name="transform" nodeId="546"/>
+      <Shape shapeId="37" name="PlayerTrigger" translation="-0.918661 0.301748 0" scale="1 1.76449 1" static="true" trigger="true" collisionMask="1048576" clipDistance="300" nodeId="158" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="visNodes" nodeId="159">
+        <TransformGroup name="visHoneyBoxFull" nodeId="160">
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-0.576596 1.89178 0.246673" rotation="0 90 0" static="true" collisionMask="1073760067" clipDistance="300" nodeId="161" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="162" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="163">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="164" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="165" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="166" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="167" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="168" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="169" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="170" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="171" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="172" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="173" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="174" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="175" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="176" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="177" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="178" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="179" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="180" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="181" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="182" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="183" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="184" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="185" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="186" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="187" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="188">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="189" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="190" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="191" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="192" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="193" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="194" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="195" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="196" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-0.576596 1.89178 0.717241" rotation="0 90 0" static="true" collisionMask="1073760067" clipDistance="300" nodeId="197" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="198" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="199">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="200" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="201" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="202" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="203" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="204" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="205" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="206" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="207" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="208" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="209" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="210" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="211" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="212" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="213" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="214" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="215" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="216" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="217" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="218" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="219" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="220" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="221" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="222" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="223" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="224">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="225" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="226" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="227" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="228" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="229" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="230" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="231" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="232" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-1.97332 2.59443 -1.73539" rotation="180 0 180" static="true" collisionMask="1073760067" clipDistance="300" nodeId="233" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="234" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="235">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="236" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="237" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="238" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="239" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="240" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="241" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="242" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="243" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="244" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="245" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="246" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="247" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="248" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="249" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="250" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="251" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="252" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="253" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="254" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="255" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="256" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="257" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="258" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="259" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="260">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="261" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="262" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="263" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="264" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="265" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="266" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="267" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="268" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-1.97332 2.59443 -2.65854" rotation="180 0 180" static="true" collisionMask="1073760067" clipDistance="300" nodeId="269" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="270" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="271">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="272" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="273" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="274" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="275" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="276" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="277" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="278" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="279" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="280" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="281" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="282" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="283" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="284" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="285" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="286" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="287" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="288" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="289" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="290" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="291" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="292" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="293" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="294" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="295" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="296">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="297" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="298" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="299" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="300" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="301" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="302" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="303" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="304" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-1.97332 2.78242 -1.73539" rotation="180 0 180" static="true" collisionMask="1073760067" clipDistance="300" nodeId="305" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="306" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="307">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="308" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="309" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="310" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="311" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="312" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="313" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="314" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="315" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="316" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="317" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="318" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="319" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="320" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="321" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="322" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="323" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="324" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="325" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="326" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="327" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="328" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="329" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="330" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="331" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="332">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="333" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="334" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="335" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="336" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="337" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="338" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="339" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="340" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-1.97332 2.78046 -2.65854" rotation="180 0 180" static="true" collisionMask="1073760067" clipDistance="300" nodeId="341" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="342" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="343">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="344" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="345" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="346" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="347" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="348" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="349" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="350" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="351" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="352" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="353" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="354" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="355" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="356" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="357" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="358" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="359" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="360" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="361" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="362" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="363" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="364" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="365" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="366" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="367" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="368">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="369" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="370" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="371" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="372" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="373" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="374" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="375" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="376" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-1.97332 1.59321 -1.73539" rotation="180 0 180" static="true" collisionMask="1073760067" clipDistance="300" nodeId="377" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="378" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="379">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="380" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="381" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="382" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="383" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="384" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="385" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="386" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="387" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="388" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="389" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="390" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="391" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="392" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="393" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="394" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="395" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="396" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="397" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="398" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="399" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="400" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="401" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="402" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="403" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="404">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="405" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="406" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="407" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="408" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="409" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="410" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="411" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="412" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-1.97332 1.77447 -1.73539" rotation="180 0 180" static="true" collisionMask="1073760067" clipDistance="300" nodeId="413" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="414" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="415">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="416" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="417" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="418" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="419" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="420" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="421" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="422" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="423" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="424" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="425" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="426" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="427" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="428" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="429" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="430" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="431" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="432" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="433" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="434" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="435" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="436" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="437" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="438" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="439" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="440">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="441" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="442" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="443" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="444" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="445" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="446" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="447" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="448" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-1.97332 1.59145 -2.65854" rotation="180 0 180" static="true" collisionMask="1073760067" clipDistance="300" nodeId="449" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="450" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="451">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="452" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="453" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="454" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="455" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="456" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="457" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="458" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="459" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="460" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="461" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="462" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="463" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="464" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="465" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="466" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="467" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="468" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="469" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="470" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="471" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="472" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="473" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="474" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="475" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="476">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="477" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="478" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="479" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="480" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="481" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="482" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="483" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="484" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="38" name="honeyBoxFull_main_component1" translation="-1.97332 1.77235 -2.65854" rotation="180 0 180" static="true" collisionMask="1073760067" clipDistance="300" nodeId="485" materialIds="18" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="39" name="vis" translation="0 -0.091971 -0.0222792" nodeId="486" materialIds="33" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0 -0.091971 -0.0222792" nodeId="487">
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.137075" nodeId="488" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="489" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="490" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.342935" nodeId="491" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="492" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="493" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.0688961" nodeId="494" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="495" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="496" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.273423" nodeId="497" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="498" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="499" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 -0.273423" nodeId="500" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="501" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="502" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 0.342935" nodeId="503" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="504" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="505" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="-0.101 0.0753185 0.137075" nodeId="506" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="507" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="508" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="40" name="Honigglas" translation="0.101 0.0753185 -0.0688961" nodeId="509" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="41" name="Deckel" translation="0.000348265 0.0832403 0" nodeId="510" materialIds="32" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="42" name="full" nodeId="511" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="512">
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="513" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.114" scale="0.176113 1 0.155746" nodeId="514" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100996 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="515" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 0.317" scale="0.176113 1 0.155746" nodeId="516" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="517" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="-0.0997949 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="518" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.101904 0.073582 -0.295643" scale="0.176113 1 0.155746" nodeId="519" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="43" name="pPlane4" translation="0.100859 0.073582 -0.0924843" scale="0.176113 1 0.155746" nodeId="520" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape shapeId="44" name="box" translation="1.80067 0.59633 5.08083" rotation="0 90 0" static="true" collisionMask="18243" density="0.01" clipDistance="300" nodeId="521" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="45" name="fillablePallet_vis" clipDistance="300" nodeId="522" materialIds="31" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="plane" translation="0 0.298 0" nodeId="523" materialIds="30" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="47" name="colPart13" translation="-0.202111 0 0.0808545" visibility="false" compoundChild="true" collisionMask="8194" density="0.02" clipDistance="300" nodeId="524" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </Shape>
+      </Shape>
+      <Shape shapeId="44" name="box" translation="1.80067 0.59633 3.63567" rotation="0 90 0" static="true" collisionMask="18243" density="0.01" clipDistance="300" nodeId="525" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="45" name="fillablePallet_vis" clipDistance="300" nodeId="526" materialIds="31" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="plane" translation="0 0.298 0" nodeId="527" materialIds="39" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="47" name="colPart13" translation="-0.202111 0 0.0808545" visibility="false" compoundChild="true" collisionMask="8194" density="0.02" clipDistance="300" nodeId="528" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </Shape>
+      </Shape>
+      <Shape shapeId="44" name="box" translation="1.80067 0.59633 2.20407" rotation="0 90 0" static="true" collisionMask="18243" density="0.01" clipDistance="300" nodeId="529" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="45" name="fillablePallet_vis" clipDistance="300" nodeId="530" materialIds="31" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="plane" translation="0 0.298 0" nodeId="531" materialIds="37" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="47" name="colPart13" translation="-0.202111 0 0.0808545" visibility="false" compoundChild="true" collisionMask="8194" density="0.02" clipDistance="300" nodeId="532" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </Shape>
+      </Shape>
+      <Shape shapeId="44" name="box" translation="1.80067 0.59633 -5.10307" rotation="0 90 0" static="true" collisionMask="18243" density="0.01" clipDistance="300" nodeId="533" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="45" name="fillablePallet_vis" clipDistance="300" nodeId="534" materialIds="31" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="plane" translation="0 0.293 0" nodeId="535" materialIds="34" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="47" name="colPart13" translation="-0.202111 0 0.0808545" visibility="false" compoundChild="true" collisionMask="8194" density="0.02" clipDistance="300" nodeId="536" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </Shape>
+      </Shape>
+      <Shape shapeId="44" name="box" translation="1.80067 0.59633 -3.68037" rotation="0 90 0" static="true" collisionMask="18243" density="0.01" clipDistance="300" nodeId="537" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="45" name="fillablePallet_vis" clipDistance="300" nodeId="538" materialIds="31" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="plane" translation="0 0.292666 0" nodeId="539" materialIds="29" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="47" name="colPart13" translation="-0.202111 0 0.0808545" visibility="false" compoundChild="true" collisionMask="8194" density="0.02" clipDistance="300" nodeId="540" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </Shape>
+      </Shape>
+      <Shape shapeId="44" name="box" translation="1.80067 0.59633 -2.27349" rotation="0 90 0" static="true" collisionMask="18243" density="0.01" clipDistance="300" nodeId="541" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="45" name="fillablePallet_vis" clipDistance="300" nodeId="542" materialIds="31" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="plane" translation="0 0.292666 0" nodeId="543" materialIds="29" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="47" name="colPart13" translation="-0.202111 0 0.0808545" visibility="false" compoundChild="true" collisionMask="8194" density="0.02" clipDistance="300" nodeId="544" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </Shape>
+      </Shape>
+      <Shape shapeId="48" name="InputTrigger" translation="-3.20484 -0.163414 -0.462638" scale="1 4.07569 12.0181" static="true" trigger="true" collisionMask="18243" clipDistance="300" nodeId="157" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="48" name="InputTrigger" translation="-3.20484 -0.163414 -0.462638" scale="1 4.07569 12.0181" static="true" trigger="true" collisionMask="18243" clipDistance="300" nodeId="550" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="48" name="InputTrigger" translation="-3.20484 -0.163414 -0.462638" scale="1 4.07569 12.0181" static="true" trigger="true" collisionMask="18243" clipDistance="300" nodeId="551" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="48" name="InputTrigger" translation="-3.20484 -0.163414 -0.462638" scale="1 4.07569 12.0181" static="true" trigger="true" collisionMask="18243" clipDistance="300" nodeId="552" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="48" name="InputTrigger" translation="-3.20484 -0.163414 -0.462638" scale="1 4.07569 12.0181" static="true" trigger="true" collisionMask="18243" clipDistance="300" nodeId="553" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

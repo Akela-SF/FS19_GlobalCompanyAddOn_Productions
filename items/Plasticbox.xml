@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="gcProductionItemNone">
+    <storeData>
+        <name>$l10n_GlobalCompanyAddOn_Productions_shopItem_plasticbox</name>
+        <functions>
+            <function>$l10n_GlobalCompanyAddOn_Productions_shopItem_function_plasticbox</function>
+        </functions>
+        <image>items/store_plasticbox.dds</image>
+        <price>30</price>
+        <category>gcProduction</category>
+        <brand>GCRODUCTIONS</brand>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <financeCategory>OTHER</financeCategory>
+    </storeData>
+
+    <base>
+        <filename>items/Plasticbox.i3d</filename>
+        <size width="0.962" length="1.271" />
+        <input allowed="false"/>
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="2"/>
+        </components>
+    </base>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="plasticbox_main_component1"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <baseMaterial>
+        <material name="box_mat" baseNode="vis">
+            <shaderParameter name="colorMat0" value="AGRISEM_YELLOW1"/>
+        </material>
+    </baseMaterial>
+
+    <baseMaterialConfigurations price="100" useDefaultColors="true" defaultColorIndex="6">
+        <material name="box_mat" shaderParameter="colorMat0" />
+    </baseMaterialConfigurations>
+
+    <i3dMappings>
+        <i3dMapping id="plasticbox_main_component1" node="0>" />
+        <i3dMapping id="vis" node="0>0" />
+    </i3dMappings>
+</vehicle>
