@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="GlobalCompanyAddOn_Productions_category" v="Продукция"/>
+
+		<e k="GlobalCompanyAddOn_Productions_shopItem_bucket" v="Ведро"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_bucket" v="Жидкости можно хранить в ведре."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_plasticbox" v="Пластиковая коробка"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_plasticbox" v="В пластиковом ящике можно перевозить разные вещи."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_emptyPallet" v="Пустой поддон"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_emptyPallet" v="На пустом поддоне можно хранить разные вещи."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_emptyPallet2" v="Пустой поддон"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_emptyPallet2" v="На пустом поддоне можно хранить разные вещи. Этот поддон можно заполнять сыпучим материалом."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_transportPallet" v="Пустой поддон"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_transportPallet" v="На пустом поддоне можно хранить разные вещи."/>
+    	<e k="GlobalCompanyAddOn_Productions_shopItem_liquidTank" v="Пустой поддон"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_liquidTank" v="В этом пустом поддоне можно перевозить жидкости."/>
+
+		<e k="GlobalCompanyAddOn_Productions_shopItem_hall" v="Производственный цех со складом"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_hall" v="В передней части есть место для производственных машин. В задней части есть небольшой склад."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_storage" v="Большой склад"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_storage" v="На этом складе есть высокие полки, на которых можно хранить товары."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_storage2" v="Средний склад"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_storage2" v="На этом складе есть высокие полки, на которых можно хранить товары. Посередине есть свободное место."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_storage3" v="Производственный цех и склад"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_storage3" v="Этот большой зал можно использовать по желанию."/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_sellstation" v="Фермерский магазин"/>
+		<e k="GlobalCompanyAddOn_Productions_shopItem_function_sellstation" v="Вся продукция производства может быть продана в фермерском магазине."/>
+
+		<e k="GlobalCompanyAddOn_Productions_fillType_honeyBoxFull" v="Коробка меда полная"/>
+		
+		<e k="GlobalCompanyAddOn_Productions_fillType_apple" v="Яблоки"/>
+		<e k="GlobalCompanyAddOn_Productions_fillType_cherry" v="Вишня"/>
+		<e k="GlobalCompanyAddOn_Productions_fillType_pear" v="Груши"/>
+		<e k="GlobalCompanyAddOn_Productions_fillType_plum" v="Сливы"/>
+
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line1" v="Продажа меда"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line2" v="Продажа яблок"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line3" v="Продажа вишни"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line4" v="Продажа груш"/>
+		<e k="GlobalCompanyAddOn_Productions_sellstation_line5" v="Продажа слив"/>
+
+		<e k="GlobalCompanyAddOn_Productions_unit_glass" v="Очки"/>
+    </elements>
+</l10n>
